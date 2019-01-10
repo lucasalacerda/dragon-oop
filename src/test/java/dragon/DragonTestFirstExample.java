@@ -9,10 +9,10 @@ public class DragonTestFirstExample {
 
     @Test
     public void testDragonConstructor(){
-        Dragon dragon = new Dragon("Dougras", "Ice", 10, 2, 450);
+        Dragon dragon = new Dragon("Dougras", "Ice", 10, 2, 450, "");
         Assert.assertEquals("Dougras", dragon.getName());
         Assert.assertEquals("Ice", dragon.getType());
-        Assert.assertEquals(10, dragon.getLifePoints());
+        Assert.assertEquals(10, dragon.getHealthPoints());
         Assert.assertEquals(2, dragon.getAttackStrength());
         Assert.assertEquals(450, dragon.getAge());
     }
@@ -34,8 +34,8 @@ public class DragonTestFirstExample {
     @Test
     public void testDragonLifePoints(){
         Dragon dragon = new Dragon();
-        dragon.setLifePoints(2);
-        Assert.assertEquals(2, dragon.getLifePoints());
+        dragon.setHealthPoints(2);
+        Assert.assertEquals(2, dragon.getHealthPoints());
     }
 
     @Test

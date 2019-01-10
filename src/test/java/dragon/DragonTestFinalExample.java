@@ -11,7 +11,7 @@ public class DragonTestFinalExample {
 
     @Before
     public void prepareTest(){
-        dragon = new Dragon("Dougras", "Ice", 10, 2, 450);
+        dragon = new Dragon("Dougras", "Ice", 10, 2, 450, "");
     }
 
     @Test
